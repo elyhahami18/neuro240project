@@ -1,0 +1,49 @@
+CONTINUAL LEARNING EXPERIMENT RESULTS
+===================================
+
+Methods analyzed: fft, replay, ewc, fft_l2, lora, lora_l2, latent_replay
+
+AVERAGE ACCURACY ACROSS ALL TASKS:
+fft: 85.03%
+replay: 53.96%
+ewc: 91.42%
+fft_l2: 89.51%
+lora: 81.76%
+lora_l2: 80.75%
+latent_replay: 76.53%
+
+CATASTROPHIC FORGETTING (Task 1):
+fft: 50.78%
+replay: 0.00%
+ewc: 11.63%
+fft_l2: 38.35%
+lora: 52.91%
+lora_l2: 47.80%
+latent_replay: 32.25%
+
+FORWARD TRANSFER (Task 1 → Task 2):
+fft: 56.51%
+replay: 50.73%
+ewc: 50.10%
+fft_l2: 50.44%
+lora: 48.92%
+lora_l2: 51.27%
+latent_replay: 49.46%
+
+BACKWARD TRANSFER (Last Task → Previous Tasks):
+fft: -6.95%
+replay: 0.00%
+ewc: 2.27%
+fft_l2: -10.50%
+lora: -4.04%
+lora_l2: -12.42%
+latent_replay: -10.33%
+
+FINAL ACCURACIES PER TASK:
+fft: ['49.22%', '84.48%', '94.66%', '97.38%', '99.39%']
+replay: ['62.22%', '50.73%', '52.29%', '53.68%', '50.88%']
+ewc: ['88.37%', '69.39%', '99.84%', '99.75%', '99.75%']
+fft_l2: ['60.61%', '89.13%', '98.67%', '99.50%', '99.65%']
+lora: ['47.09%', '73.65%', '88.85%', '99.55%', '99.65%']
+lora_l2: ['52.15%', '94.17%', '74.76%', '85.30%', '97.38%']
+latent_replay: ['67.75%', '50.64%', '67.88%', '96.93%', '99.45%']
