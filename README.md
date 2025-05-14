@@ -5,7 +5,7 @@
 
 The project implements several techniques for continual learning on the MNIST dataset:
 - **Fine-tuning**: Standard sequential training without memory
-- **L2 Regularization & Elastic Weight Consolidation (EWC)**: Regularization-based approach using Fisher information
+- **L2 Regularization & Elastic Weight Consolidation (EWC)**: Regularization-based approach (simple L2) and more advanced techniques using Fisher information matrix
 - **Exemplar Replay**: Traditional memory replay with stored samples
 - **Latent Replay**: Approach storing feature representations instead of raw images
 
